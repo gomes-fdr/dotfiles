@@ -6,7 +6,7 @@ set wildmenu
 set cmdheight=2
 
 " Personal notes:
-" 	To be more clear the color scheme, I mut use a terminal with dark
+" 	To be more clear the color scheme, I must use a terminal with dark
 " 	solarized color scheme support.
 " 	Using pluggin system:
 " 		PlugInstall
