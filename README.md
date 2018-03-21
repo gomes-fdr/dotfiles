@@ -17,7 +17,7 @@ sudo aptitude install tmux
 
 ### Simple tmux guide
 
-  * Create nem session: tmux new -s <name>
+  * Create nem session: tmux new -s \<name\>
   * Split window C-b % (Vertical)
   * Split window C-b " (Horizontal)
   * Navigate betwen panels C-b arrow
