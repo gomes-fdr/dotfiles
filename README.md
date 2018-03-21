@@ -24,6 +24,6 @@ sudo aptitude install tmux
   * Close panels C-b d
   * Create new window C-b c
   * Session handling: tmux ls
-  * Session atach: tmux  attach -t <name>
+  * Session atach: tmux  attach -t \<name\>
   * Rename session C-b $
   * Help: C-b ?
