@@ -36,5 +36,6 @@ Using pluggin system:
 		PlugInstall
 		PlugClean
 
-How to install vim pluggins system, vim plug
+How to install vim pluggins system, vim plug:
+
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
