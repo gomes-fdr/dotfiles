@@ -27,3 +27,14 @@ sudo aptitude install tmux
   * Session atach: tmux  attach -t \<name\>
   * Rename session C-b $
   * Help: C-b ?
+
+## Vim setup
+Personal notes:
+To be more clear the color scheme, I'd use a terminal with dark solarized color scheme support.
+
+Using pluggin system:
+		PlugInstall
+		PlugClean
+
+How to install vim pluggins system, vim plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
