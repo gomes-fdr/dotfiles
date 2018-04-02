@@ -33,8 +33,10 @@ Personal notes:
 To be more clear the color scheme, I'd use a terminal with dark solarized color scheme support.
 
 Using pluggin system:
-		PlugInstall
-		PlugClean
+```
+:PlugInstall
+:PlugClean
+```
 
 How to install vim pluggins system, vim plug:
 
