@@ -30,7 +30,8 @@ sudo aptitude install tmux
 
 ## Vim setup
 Personal notes:
-To be more clear the color scheme, I'd use a terminal with dark solarized color scheme support.
+  * To be more clear the color scheme, You should use a terminal with dark solarized color scheme support.
+  * It is important that package vim-nox had been installed (debian 9).
 
 Using pluggin system:
 ```

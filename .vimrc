@@ -10,6 +10,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/msanders/snipmate.vim'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
+Plug 'maralla/completor.vim', { 'do': 'pip install jedi' }
 
 
 call plug#end()
