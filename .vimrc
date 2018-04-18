@@ -4,6 +4,12 @@ set nowrap
 set nocompatible
 set wildmenu
 set cmdheight=2
+set ts=4
+set autoindent
+set expandtab
+set shiftwidth=4
+set cursorline
+set showmatch
 
 call plug#begin('~/.vim/plugged')
 
