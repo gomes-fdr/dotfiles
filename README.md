@@ -28,6 +28,17 @@ sudo aptitude install tmux
   * Rename session C-b $
   * Help: C-b ?
 
+## tmuxp
+A manager of tmux workspaces
+
+Install:
+```
+$ pip install tmuxp
+```
+
+
+
+
 ## Vim setup
 Personal notes:
   * To be more clear the color scheme, You should use a terminal with dark solarized color scheme support.
