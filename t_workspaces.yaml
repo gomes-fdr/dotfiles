@@ -1,4 +1,4 @@
-session_name: 3-panes
+session_name: dev
 windows:
 - window_name: dev window
   layout: main-vertical
