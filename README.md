@@ -36,25 +36,12 @@ Install:
 $ pip install tmuxp
 ```
 
+~~## Vim setup~~
 
+## micro - the text editor
+I switch to micro, syntax hilight, snippets and git integration. I am missing code complete, but the simplicity compansates.
 
-
-## Vim setup
-Personal notes:
-  * To be more clear the color scheme, You should use a terminal with dark solarized color scheme support.
-  * It is important that package vim-nox had been installed (debian 9).
-
-Using pluggin system:
-```
-:PlugInstall
-:PlugClean
-```
-
-How to install vim pluggins system, vim plug:
-
-```
-$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+  * URL: https://micro-editor.github.io/
 
 ## pyenv
 A python env manager:
