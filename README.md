@@ -55,3 +55,17 @@ How to install vim pluggins system, vim plug:
 ```
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+## pyenv
+A python env manager:
+
+  * URL: https://github.com/pyenv/pyenv
+
+
+```
+$ pyenv install 3.6.0
+$ pyenv global 3.6.0
+$ pyenv global system
+```
+
+*Important:* Before to try install in debian 9 look at https://github.com/pyenv/pyenv/wiki/Common-build-problems  
