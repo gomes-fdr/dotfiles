@@ -73,7 +73,7 @@ I am using vscode from Microsoft to code in python, it has code complete, git in
 Using the setup environment described before, just call:
 
 ```$ code .
- ```
+```
 
  The vscode already use the local venv created before.
  
