@@ -11,7 +11,7 @@ logout
 curl -L https://get.oh-my.fish | fish
 
 ### Customize fish
-I like very much of the theme clearance, to install do steps:
+I like very much of the theme clearance, to install do the this:
 ```
 $ omf install clearance
 ```
