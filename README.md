@@ -56,3 +56,14 @@ $ pyenv global system
 ```
 
 *Important:* Before to try install in debian 9 look at https://github.com/pyenv/pyenv/wiki/Common-build-problems  
+
+## Create local virtual enviroments
+Python 3 offer a simple way to create virtual enviroments(venv), lets get start:
+
+```
+$ mkdir myapp; cd myapp
+$ python3 -m venv venv
+$ source venv/bin/active.fish
+```
+
+The main advantage to use it, is because now we have a local copy of python installation.
