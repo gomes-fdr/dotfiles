@@ -10,6 +10,12 @@ logout
 ### Install oh my fish
 curl -L https://get.oh-my.fish | fish
 
+### Customize fish
+I like very much of the theme clearance, to install do steps:
+```
+$ omf install clearance
+```
+
 ## tmux
 Multiplexer terminal, to handle with windows(split panels) and sessions in terminals.
 
