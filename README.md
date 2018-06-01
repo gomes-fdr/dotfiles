@@ -72,7 +72,8 @@ The main advantage to use it, is because now we have a local copy of python inst
 I am using vscode from Microsoft to code in python, it has code complete, git integration and snippets, all I need to be productive.
 Using the setup environment described before, just call:
 
-```$ code .
+```
+$ code .
 ```
 
  The vscode already use the local venv created before.
