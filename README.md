@@ -57,8 +57,8 @@ $ pyenv global system
 
 *Important:* Before to try install in debian 9 look at https://github.com/pyenv/pyenv/wiki/Common-build-problems  
 
-## Create local virtual enviroments
-Python 3 offer a simple way to create virtual enviroments(venv), lets get start:
+## Create local virtual environments
+Python 3 offer a simple way to create virtual environments(venv), lets get start:
 
 ```
 $ mkdir myapp; cd myapp
@@ -67,3 +67,13 @@ $ source venv/bin/active.fish
 ```
 
 The main advantage to use it, is because now we have a local copy of python installation.
+
+## VS Code
+I am using vscode from Microsoft to code in python, it has code complete, git integration and snippets, all I need to be productive.
+Using the setup environment described before, just call:
+
+```$ code .
+ ```
+
+ The vscode already use the local venv created before.
+ 
