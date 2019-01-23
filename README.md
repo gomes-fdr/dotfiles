@@ -94,5 +94,5 @@ And add this line:
 ```
 source /home/frgomes/projects/autoenv_fish/activate.fish
 ```
-To test it, create a new dir with a .env file, put some line that in it 'echo test', always you enter in this dir, 'test' will be printed - nice ;op - great possibilities!
+To test it, create a new dir with a .env file, put some line like that in it 'echo test'. Voala! always you enter in this dir, 'test' will be printed - nice ;op - great possibilities!
  
