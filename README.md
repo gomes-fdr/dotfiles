@@ -34,20 +34,12 @@ sudo aptitude install tmux
   * Rename session C-b $
   * Help: C-b ?
 
-## tmuxp
-A manager of tmux workspaces
+~~tmuxp~~
 
-Install:
-```
-$ pip install tmuxp
-```
+~~Vim setup~~
 
-~~## Vim setup~~
+~~micro - the text editor~~ 
 
-## micro - the text editor
-I switch to micro, syntax hilight, snippets and git integration. I am missing code complete, but the simplicity compansates.
-
-  * URL: https://micro-editor.github.io/
 
 ## pyenv
 A python env manager:
@@ -82,5 +74,25 @@ Using the setup environment described before, just call:
 $ code .
 ```
 
- The vscode already use the local venv created before.
+The vscode already use the local venv created before.
+
+## Autoenv
+
+It is a very nice project that bring some facilities to work with enviroment vars, check this out:
+
+```
+$ pip install autoenv
+$ git clone https://github.com/loopbit/autoenv_fish
+```
+
+To have this work with fish on startup, do that:
+```
+$ vi ~/.config/fish/config.fish
+```
+
+And add this line:
+```
+source /home/frgomes/projects/autoenv_fish/activate.fish
+```
+To test it, create a new dir with a .env file, put some line that in it 'echo test', always you enter in this dir, 'test' will be printed - nice ;op - great possibilities!
  
