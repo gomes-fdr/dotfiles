@@ -1,0 +1,4 @@
+activate_virtualenv() {
+  export VIRTUAL_ENV=$1
+  PATH_add "$VIRTUAL_ENV"
+}

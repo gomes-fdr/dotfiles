@@ -76,23 +76,21 @@ $ code .
 
 The vscode already use the local venv created before.
 
-## Autoenv
+~~## Autoenv~~
 
-It is a very nice project that bring some facilities to work with enviroment vars, check this out:
+## direnv
+I switch to direnv to automate boring actions, like setup local enviroment VARS. Now I just go to /my/project/dir and all will setup auto-magicly
 
 ```
-$ pip install autoenv
-$ git clone https://github.com/loopbit/autoenv_fish
-```
-
-To have this work with fish on startup, do that:
-```
-$ vi ~/.config/fish/config.fish
+$ sudo apt install direnv
 ```
 
-And add this line:
+We just need to add this in ~/.config/direnv/direnvrc
+
 ```
-source /home/frgomes/projects/autoenv_fish/activate.fish
+activate_virtualenv() {
+  export VIRTUAL_ENV=$1
+  PATH_add "$VIRTUAL_ENV"
+}
 ```
-To test it, create a new dir with a .env file, put some line like that in it 'echo test'. Voala! always you enter in this dir, 'test' will be printed - nice ;op - great possibilities!
- 
+Then, when we use virtualenv + fish all things works like a charm.
