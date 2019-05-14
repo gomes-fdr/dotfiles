@@ -1,4 +1,5 @@
 # dotfiles
+Ok, I know it is not a dotenv - but still a good start point and reference for my self
 
 ## Shell
 sudo aptitude install fish
@@ -16,7 +17,8 @@ I like very much of the theme clearance, to install do the this:
 $ omf install clearance
 ```
 
-## tmux
+~~tmux~~
+
 Multiplexer terminal, to handle with windows(split panels) and sessions in terminals.
 
 sudo aptitude install tmux
@@ -75,6 +77,54 @@ $ code .
 ```
 
 The vscode already use the local venv created before.
+
+### Export extensions used in VSCode
+It is nice to copy your text editor preferences, that way you can feel always in home ;op To do it in VSCode it is simple, look that.
+
+Machine with your extentions:
+
+```
+⟩ code --list-extensions | xargs -L 1 echo code --install-extension
+code --install-extension 2gua.rainbow-brackets
+code --install-extension alphabotsec.vscode-eclipse-keybindings
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension GreatMinds.gitflow4code
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension ms-python.python
+code --install-extension niradler.prettierthis
+code --install-extension octref.vetur
+code --install-extension peakchen90.vue-beautify
+code --install-extension PKief.material-icon-theme
+code --install-extension ritwickdey.LiveServer
+
+~
+⟩ date
+ter mai 14 08:51:53 -03 2019
+
+```
+
+To install it, copy and paste in temrinal the output listed before, you can put it in a script too.
+
+```
+#!/bin/sh
+
+code --install-extension 2gua.rainbow-brackets
+code --install-extension alphabotsec.vscode-eclipse-keybindings
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension GreatMinds.gitflow4code
+code --install-extension Gruntfuggly.todo-tree
+code --install-extension ms-python.python
+code --install-extension niradler.prettierthis
+code --install-extension octref.vetur
+code --install-extension peakchen90.vue-beautify
+code --install-extension PKief.material-icon-theme
+code --install-extension ritwickdey.LiveServer
+
+```
+
+tip from: https://stackoverflow.com/questions/35773299/how-can-you-export-vs-code-extension-list
 
 ~~## Autoenv~~
 
