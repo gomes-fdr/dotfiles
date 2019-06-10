@@ -144,3 +144,31 @@ activate_virtualenv() {
 }
 ```
 Then, when we use virtualenv + fish all things works like a charm.
+
+## PC de casa
+
+```
+
+            .-/+oossssoo+/-.               fabiano@mozo 
+        `:+ssssssssssssssssss+:`           ------------ 
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 18.04.2 LTS x86_64 
+    .ossssssssssssssssssdMMMNysssso.       Host: 22V240-L.BK55P1 0.1 
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 4.15.0-50-generic 
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 5 hours, 32 mins 
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2393 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: fish 2.7.1 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: MATE 
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Metacity (Marco) 
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Radiant-MATE 
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Radiant-MATE [GTK2/3] 
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Radiant-MATE [GTK2/3] 
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: terminator 
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel Pentium N3530 (4) @ 2.165GHz 
+    .ossssssssssssssssssdMMMNysssso.       GPU: Intel Bay Trail 
+      -+sssssssssssssssssyyyssss+-         Memory: 4366MiB / 7855MiB 
+        `:+ssssssssssssssssss+:` 
+            .-/+oossssoo+/-.                                       
+
+
+```
