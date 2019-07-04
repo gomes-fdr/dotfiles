@@ -148,27 +148,21 @@ Then, when we use virtualenv + fish all things works like a charm.
 ## PC de casa
 
 ```
-
-            .-/+oossssoo+/-.               fabiano@mozo 
-        `:+ssssssssssssssssss+:`           ------------ 
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 18.04.2 LTS x86_64 
-    .ossssssssssssssssssdMMMNysssso.       Host: 22V240-L.BK55P1 0.1 
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 4.15.0-50-generic 
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 5 hours, 32 mins 
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 2393 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: fish 2.7.1 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: MATE 
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Metacity (Marco) 
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Radiant-MATE 
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Radiant-MATE [GTK2/3] 
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Radiant-MATE [GTK2/3] 
-  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: terminator 
-   /ssssssssssshdmNNNNmyNMMMMhssssss/      CPU: Intel Pentium N3530 (4) @ 2.165GHz 
-    .ossssssssssssssssssdMMMNysssso.       GPU: Intel Bay Trail 
-      -+sssssssssssssssssyyyssss+-         Memory: 4366MiB / 7855MiB 
-        `:+ssssssssssssssssss+:` 
-            .-/+oossssoo+/-.                                       
-
-
+       _,met$$$$$gg.          fabiano@mozolido 
+    ,g$$$$$$$$$$$$$$$P.       ---------------- 
+  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64 
+ ,$$P'              `$$$.     Host: 22V240-L.BK55P1 0.1 
+',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-5-amd64 
+`d$$'     ,$P"'   .    $$$    Uptime: 5 mins 
+ $$P      d$'     ,    $$P    Packages: 2287 (dpkg) 
+ $$:      $$.   -    ,d$$'    Shell: fish 3.0.2 
+ $$;      Y$b._   _,d$P'      Resolution: 1920x1080 
+ Y$$.    `.`"Y$$$$P"'         DE: GNOME 3.30.2 
+ `$$b      "-.__              Theme: Adwaita [GTK2/3] 
+  `Y$$                        Icons: Adwaita [GTK2/3] 
+   `Y$$.                      Terminal: gnome-terminal 
+     `$$b.                    CPU: Intel Pentium N3530 (4) @ 2.165GHz 
+       `Y$$b.                 GPU: Intel Atom Processor Z36xxx/Z37xxx Series Graphics & Display 
+          `"Y$b._             Memory: 1977MiB / 7856MiB 
+              `"""
 ```
