@@ -17,7 +17,7 @@ I like very much of the theme clearance, to install do the this:
 $ omf install clearance
 ```
 
-~~tmux~~
+## tmux
 
 Multiplexer terminal, to handle with windows(split panels) and sessions in terminals.
 
