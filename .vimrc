@@ -1,4 +1,6 @@
 syntax on
+filetype plugin on
+
 set number
 set nowrap
 set cmdheight=2
@@ -26,6 +28,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " To move lines UP(n) and DOWN(m)
 nmap n :m +1<CR>
 nmap m :m -2<CR>
+
 
 " VIM plug 
 " https://github.com/junegunn/vim-plug
