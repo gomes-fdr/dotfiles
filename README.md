@@ -1,20 +1,52 @@
 # dotfiles
 Ok, I know it is not a dotenv - but still a good start point and reference for my self
 
-## Shell
-sudo aptitude install fish
+## VIM
 
-### Replace in the system
-chsh /usr/bin/fish
-logout
+This is my .vimrc content, very simple but very useful.
 
-### Install oh my fish
-curl -L https://get.oh-my.fish | fish
-
-### Customize fish
-I like very much of the theme clearance, to install do the this:
 ```
-$ omf install clearance
+syntax on
+set number
+set nowrap
+set nocompatible
+set cmdheight=2
+set ts=4
+set autoindent
+set expandtab
+set shiftwidth=4
+set nobackup
+set showmatch
+
+" Novidades aprendidas com https://www.youtube.com/watch?v=XA2WjJbmmoM&t=325s
+" Para fazer fuzzy find use o * em parte do nome
+set path+=**
+set wildmenu
+
+" Para abrir um file explorer no VIM, sem nerdtree
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+let g:netrw_altv=1
+let g:netrw_liststyle=3
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+" VIM plug 
+" https://github.com/junegunn/vim-plug
+" curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"
+call plug#begin('~/.vim/plugged')
+
+Plug 'https://github.com/msanders/snipmate.vim'
+Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+
+call plug#end()
+
+" Vim-Airline Configuration
+let g:airline_theme='minimalist'
 ```
 
 ## tmux
@@ -35,13 +67,6 @@ sudo aptitude install tmux
   * Session atach: tmux  attach -t \<name\>
   * Rename session C-b $
   * Help: C-b ?
-
-~~tmuxp~~
-
-~~Vim setup~~
-
-~~micro - the text editor~~ 
-
 
 ## pyenv
 A python env manager:
@@ -68,66 +93,6 @@ $ source venv/bin/active.fish
 
 The main advantage to use it, is because now we have a local copy of python installation.
 
-## VS Code
-I am using vscode from Microsoft to code in python, it has code complete, git integration and snippets, all I need to be productive.
-Using the setup environment described before, just call:
-
-```
-$ code .
-```
-
-The vscode already use the local venv created before.
-
-### Export extensions used in VSCode
-It is nice to copy your text editor preferences, that way you can feel always in home ;op To do it in VSCode it is simple, look that.
-
-Machine with your extentions:
-
-```
-⟩ code --list-extensions | xargs -L 1 echo code --install-extension
-code --install-extension 2gua.rainbow-brackets
-code --install-extension alphabotsec.vscode-eclipse-keybindings
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension eamodio.gitlens
-code --install-extension GreatMinds.gitflow4code
-code --install-extension Gruntfuggly.todo-tree
-code --install-extension ms-python.python
-code --install-extension niradler.prettierthis
-code --install-extension octref.vetur
-code --install-extension peakchen90.vue-beautify
-code --install-extension PKief.material-icon-theme
-code --install-extension ritwickdey.LiveServer
-
-~
-⟩ date
-ter mai 14 08:51:53 -03 2019
-
-```
-
-To install it, copy and paste in temrinal the output listed before, you can put it in a script too.
-
-```
-#!/bin/sh
-
-code --install-extension 2gua.rainbow-brackets
-code --install-extension alphabotsec.vscode-eclipse-keybindings
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension eamodio.gitlens
-code --install-extension GreatMinds.gitflow4code
-code --install-extension Gruntfuggly.todo-tree
-code --install-extension ms-python.python
-code --install-extension niradler.prettierthis
-code --install-extension octref.vetur
-code --install-extension peakchen90.vue-beautify
-code --install-extension PKief.material-icon-theme
-code --install-extension ritwickdey.LiveServer
-
-```
-
-tip from: https://stackoverflow.com/questions/35773299/how-can-you-export-vs-code-extension-list
-
-~~## Autoenv~~
-
 ## direnv
 I switch to direnv to automate boring actions, like setup local enviroment VARS. Now I just go to /my/project/dir and all will setup auto-magicly
 
@@ -135,34 +100,29 @@ I switch to direnv to automate boring actions, like setup local enviroment VARS.
 $ sudo apt install direnv
 ```
 
-We just need to add this in ~/.config/direnv/direnvrc
-
-```
-activate_virtualenv() {
-  export VIRTUAL_ENV=$1
-  PATH_add "$VIRTUAL_ENV"
-}
-```
-Then, when we use virtualenv + fish all things works like a charm.
-
 ## PC de casa
 
 ```
-       _,met$$$$$gg.          fabiano@mozolido 
-    ,g$$$$$$$$$$$$$$$P.       ---------------- 
-  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64 
- ,$$P'              `$$$.     Host: 22V240-L.BK55P1 0.1 
-',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-5-amd64 
-`d$$'     ,$P"'   .    $$$    Uptime: 5 mins 
- $$P      d$'     ,    $$P    Packages: 2287 (dpkg) 
- $$:      $$.   -    ,d$$'    Shell: fish 3.0.2 
- $$;      Y$b._   _,d$P'      Resolution: 1920x1080 
- Y$$.    `.`"Y$$$$P"'         DE: GNOME 3.30.2 
- `$$b      "-.__              Theme: Adwaita [GTK2/3] 
-  `Y$$                        Icons: Adwaita [GTK2/3] 
-   `Y$$.                      Terminal: gnome-terminal 
-     `$$b.                    CPU: Intel Pentium N3530 (4) @ 2.165GHz 
-       `Y$$b.                 GPU: Intel Atom Processor Z36xxx/Z37xxx Series Graphics & Display 
-          `"Y$b._             Memory: 1977MiB / 7856MiB 
-              `"""
+            .-/+oossssoo+/-.               fabiano@mozolido
+        `:+ssssssssssssssssss+:`           ----------------
+      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 18.04.2 LTS x86_64
+    .ossssssssssssssssssdMMMNysssso.       Host: 22V240-L.BK55P1 0.1
+   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 4.18.0-25-generic
+  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 4 hours, 9 mins
+ /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1724
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 4.4.20
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: Xfce
+ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Xfwm4
++sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Greybird
+.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Greybird [GTK2/3]
+ /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Elementary-xfce-darker [GTK2/3]
+  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: xfce4-terminal
+   /ssssssssssshdmNNNNmyNMMMMhssssss/      Terminal Font: DejaVu Sans Mono 10
+    .ossssssssssssssssssdMMMNysssso.       CPU: Intel Pentium N3530 (4) @ 2.165GHz
+      -+sssssssssssssssssyyyssss+-         GPU: Intel Bay Trail
+        `:+ssssssssssssssssss+:`           Memory: 2083MiB / 7855MiB
+            .-/+oossssoo+/-.
+
+
 ```
