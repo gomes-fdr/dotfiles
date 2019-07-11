@@ -31,6 +31,11 @@ let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" To move lines UP(n) and DOWN(m)
+nmap n: n +1<CR>
+nmap m: m -2<CR>
+
+
 " VIM plug 
 " https://github.com/junegunn/vim-plug
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
