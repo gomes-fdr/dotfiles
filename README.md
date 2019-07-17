@@ -105,29 +105,3 @@ I switch to direnv to automate boring actions, like setup local enviroment VARS.
 $ sudo apt install direnv
 ```
 
-## PC de casa
-
-```
-            .-/+oossssoo+/-.               fabiano@mozolido
-        `:+ssssssssssssssssss+:`           ----------------
-      -+ssssssssssssssssssyyssss+-         OS: Ubuntu 18.04.2 LTS x86_64
-    .ossssssssssssssssssdMMMNysssso.       Host: 22V240-L.BK55P1 0.1
-   /ssssssssssshdmmNNmmyNMMMMhssssss/      Kernel: 4.18.0-25-generic
-  +ssssssssshmydMMMMMMMNddddyssssssss+     Uptime: 4 hours, 9 mins
- /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/    Packages: 1724
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Shell: bash 4.4.20
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   Resolution: 1920x1080
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   DE: Xfce
-ossyNMMMNyMMhsssssssssssssshmmmhssssssso   WM: Xfwm4
-+sssshhhyNMMNyssssssssssssyNMMMysssssss+   WM Theme: Greybird
-.ssssssssdMMMNhsssssssssshNMMMdssssssss.   Theme: Greybird [GTK2/3]
- /sssssssshNMMMyhhyyyyhdNMMMNhssssssss/    Icons: Elementary-xfce-darker [GTK2/3]
-  +sssssssssdmydMMMMMMMMddddyssssssss+     Terminal: xfce4-terminal
-   /ssssssssssshdmNNNNmyNMMMMhssssss/      Terminal Font: DejaVu Sans Mono 10
-    .ossssssssssssssssssdMMMNysssso.       CPU: Intel Pentium N3530 (4) @ 2.165GHz
-      -+sssssssssssssssssyyyssss+-         GPU: Intel Bay Trail
-        `:+ssssssssssssssssss+:`           Memory: 2083MiB / 7855MiB
-            .-/+oossssoo+/-.
-
-
-```
