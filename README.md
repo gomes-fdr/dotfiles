@@ -7,16 +7,20 @@ This is my .vimrc content, very simple but very useful.
 
 ```
 syntax on
+filetype plugin on
+
 set number
-set nowrap
-set nocompatible
+set wrap
+set linebreak
 set cmdheight=2
+set nocompatible
 set ts=4
 set autoindent
 set expandtab
 set shiftwidth=4
 set nobackup
 set showmatch
+set laststatus=2
 
 " Novidades aprendidas com https://www.youtube.com/watch?v=XA2WjJbmmoM&t=325s
 " Para fazer fuzzy find use o * em parte do nome
@@ -32,8 +36,8 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " To move lines UP(n) and DOWN(m)
-nmap n: n +1<CR>
-nmap m: m -2<CR>
+nmap n :m +1<CR>
+nmap m :m -2<CR>
 
 
 " VIM plug 
@@ -44,14 +48,10 @@ nmap m: m -2<CR>
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/msanders/snipmate.vim'
-Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'edkolev/tmuxline.vim'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-" Vim-Airline Configuration
-let g:airline_theme='minimalist'
 ```
 
 ## tmux
