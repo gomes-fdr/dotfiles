@@ -104,3 +104,5 @@ I switch to direnv to automate boring actions, like setup local enviroment VARS.
 $ sudo apt install direnv
 ```
 
+## Bash powerline
+I use a simple script to config my bash prompt [Bash powerline](https://github.com/riobard/bash-powerline)
