@@ -73,19 +73,8 @@ sudo aptitude install tmux
   * Rename session C-b $
   * Help: C-b ?
 
-## pyenv
-A python env manager:
-
-  * URL: https://github.com/pyenv/pyenv
-
-
-```
-$ pyenv install 3.6.0
-$ pyenv global 3.6.0
-$ pyenv global system
-```
-
-*Important:* Before to try install in debian 9 look at https://github.com/pyenv/pyenv/wiki/Common-build-problems  
+## asdf
+I switch to [ASDF A generic version manager](https://asdf-vm.com) - I did some notes in my blog about how to use it [my web notes](https://gomes-fdr.github.io/posts/2019/ferramentas-para-dev-asdf)
 
 ## Create local virtual environments
 Python 3 offer a simple way to create virtual environments(venv), lets get start:
