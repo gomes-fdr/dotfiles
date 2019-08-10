@@ -14,6 +14,11 @@ set nobackup
 set showmatch
 set laststatus=2
 set relativenumber
+set encoding=utf8
+set clipboard=unnamed
+set nobackup
+set writebackup
+set guifont=DroidSansMono_Nerd_Font:h11
 
 " Novidades aprendidas com https://www.youtube.com/watch?v=XA2WjJbmmoM&t=325s
 " Para fazer fuzzy find use o * em parte do nome
@@ -31,7 +36,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " To move lines UP(n) and DOWN(m)
 nmap n :m +1<CR>
 nmap m :m -2<CR>
-
+map <tab> <Plug>CompletorCppJumpToPlaceholder
 
 " VIM plug 
 " https://github.com/junegunn/vim-plug
@@ -40,9 +45,14 @@ nmap m :m -2<CR>
 "
 call plug#begin('~/.vim/plugged')
 
-Plug 'https://github.com/msanders/snipmate.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'https://github.com/tmhedberg/SimpylFold'
+Plug 'https://github.com/vim-scripts/indentpython.vim'
+Plug 'scrooloose/nerdcommenter' " NERD_commenter defines the <Leader>cc mapping, so you'd press (one after the other): \ CC
+Plug 'https://github.com/msanders/snipmate.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'maralla/completor.vim'
 
 call plug#end()
 
@@ -55,3 +65,5 @@ let g:lightline = {
       \   'gitbranch': 'gitbranch#name'
       \ },
       \ }
+
+let g:SimpylFold_docstring_preview=1
