@@ -13,6 +13,7 @@ set shiftwidth=4
 set nobackup
 set showmatch
 set laststatus=2
+set relativenumber
 
 " Novidades aprendidas com https://www.youtube.com/watch?v=XA2WjJbmmoM&t=325s
 " Para fazer fuzzy find use o * em parte do nome
