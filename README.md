@@ -105,4 +105,13 @@ $ sudo apt install direnv
 ```
 
 ## oh-my-bash
-I switch to oh-mybash using the theme `bakke` [site](https://ohmybash.github.io/)
+I switch to oh-myi-bash using the theme `bakke` [site](https://ohmybash.github.io/)
+
+## Web Squence Diagrams
+I start to use this web tool [site](https://www.websequencediagrams.com)
+
+## Off-line doc tool
+I use Zeal [site](https://zealdocs.org/)
+
+## Map mind
+I use Heimer to create my mind map [site](https://github.com/juzzlin/Heimer)
