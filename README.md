@@ -115,3 +115,18 @@ I use Zeal [site](https://zealdocs.org/)
 
 ## Map mind
 I use Heimer to create my mind map [site](https://github.com/juzzlin/Heimer)
+
+## Tool to test http
+I start to use siege, to install just use [site](https://github.com/JoeDog/siege):
+
+```
+apt install siege
+```
+
+### How to use it
+
+```
+siege -c 5 -r 1 http://localhost:5000/test
+```
+
+If you wanna more information, type `man siege`
