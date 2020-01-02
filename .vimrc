@@ -19,6 +19,7 @@ set clipboard=unnamed
 set nobackup
 set writebackup
 set guifont=DroidSansMono_Nerd_Font:h11
+set encoding=UTF-8
 
 " Novidades aprendidas com https://www.youtube.com/watch?v=XA2WjJbmmoM&t=325s
 " Para fazer fuzzy find use o * em parte do nome
@@ -34,8 +35,8 @@ let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " To move lines UP(n) and DOWN(m)
-nmap n :m +1<CR>
-nmap m :m -2<CR>
+"nmap n :m +1<CR>
+"nmap m :m -2<CR>
 map <tab> <Plug>CompletorCppJumpToPlaceholder
 
 " VIM plug 
@@ -48,11 +49,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'https://github.com/tmhedberg/SimpylFold'
-Plug 'https://github.com/vim-scripts/indentpython.vim'
-Plug 'scrooloose/nerdcommenter' " NERD_commenter defines the <Leader>cc mapping, so you'd press (one after the other): \ CC
 Plug 'https://github.com/msanders/snipmate.vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'maralla/completor.vim'
+Plug 'https://github.com/editorconfig/editorconfig-vim'
 
 call plug#end()
 
