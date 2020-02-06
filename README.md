@@ -130,3 +130,12 @@ siege -c 5 -r 1 http://localhost:5000/test
 ```
 
 If you wanna more information, type `man siege`
+
+## tmux again
+
+I came back to use tmux instead terminator, now I just use .tmux.conf and some pre-sets to gain some facilities.
+
+```
+$ <C-a> is the main key combine, instead od <C-b>
+$ <C-a> D load my pre-set DEV enviroment
+```
