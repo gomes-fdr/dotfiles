@@ -25,6 +25,7 @@ set encoding=UTF-8
 " Para fazer fuzzy find use o * em parte do nome
 set path+=**
 set wildmenu
+"set rtp+=~/.vim/plugged/tabnine-vim
 
 " Para abrir um file explorer no VIM, sem nerdtree
 let g:netrw_banner=0
@@ -51,6 +52,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'https://github.com/tmhedberg/SimpylFold'
 Plug 'https://github.com/msanders/snipmate.vim'
 Plug 'https://github.com/editorconfig/editorconfig-vim'
+Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
@@ -65,3 +67,4 @@ let g:lightline = {
       \ }
 
 let g:SimpylFold_docstring_preview=1
+
