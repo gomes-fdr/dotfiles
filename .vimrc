@@ -18,7 +18,6 @@ set encoding=utf8
 set clipboard=unnamed
 set nobackup
 set writebackup
-set guifont=DroidSansMono_Nerd_Font:h11
 set encoding=UTF-8
 
 " Novidades aprendidas com https://www.youtube.com/watch?v=XA2WjJbmmoM&t=325s
@@ -52,7 +51,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'https://github.com/tmhedberg/SimpylFold'
 Plug 'https://github.com/msanders/snipmate.vim'
 Plug 'https://github.com/editorconfig/editorconfig-vim'
-Plug 'zxqfl/tabnine-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
