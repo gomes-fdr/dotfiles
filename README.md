@@ -5,7 +5,8 @@ Ok, I know it is not a dotenv - but still a good start point and reference for m
 
 This is my .vimrc content, very simple but very useful.
 
-[Vim Boostrap](https://vim-bootstrap.com)
+~~[Vim Boostrap](https://vim-bootstrap.com)~~ 
+[VIM config](https://vimconfig.com/)
 
 ## tmux
 
