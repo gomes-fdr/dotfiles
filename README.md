@@ -17,15 +17,15 @@ sudo aptitude install tmux
 ### Simple tmux guide
 
   * Create nem session: tmux new -s \<name\>
-  * Split window C-b % (Vertical)
-  * Split window C-b " (Horizontal)
-  * Navigate betwen panels C-b arrow
-  * Close panels C-b d
-  * Create new window C-b c
+  * Split window C-a % (Vertical)
+  * Split window C-a " (Horizontal)
+  * Navigate betwen panels C-a arrow
+  * Close panels C-a d
+  * Create new window C-a c
   * Session handling: tmux ls
   * Session atach: tmux  attach -t \<name\>
-  * Rename session C-b $
-  * Help: C-b ?
+  * Rename session C-a $
+  * Help: C-a ?
 
 ## asdf
 I switch to [ASDF A generic version manager](https://asdf-vm.com) - I did some notes in my blog about how to use it [my web notes](https://gomes-fdr.github.io/posts/2019/ferramentas-para-dev-asdf)
@@ -80,6 +80,6 @@ If you wanna more information, type `man siege`
 I came back to use tmux instead terminator, now I just use .tmux.conf and some pre-sets to gain some facilities.
 
 ```
-$ <C-a> is the main key combine, instead od <C-b>
+$ <C-a> is the main key combine, instead od <C-a>
 $ <C-a> D load my pre-set DEV enviroment
 ```
