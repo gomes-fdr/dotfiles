@@ -48,6 +48,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'https://github.com/msanders/snipmate.vim'
+Plug 'zxqfl/tabnine-vim'
 
 call plug#end()
 
