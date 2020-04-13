@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Name=DWM
+Comment=Use this session to run DWM as your desktop environment
+Exec=/etc/X11/Xsession
+Icon=
+Type=Application
