@@ -18,7 +18,6 @@ set softtabstop=4	        " Number of spaces per Tab
  
 " Advanced
 set ruler	                " Show row and column ruler information
- 
 set undolevels=1000	        " Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
  
@@ -26,6 +25,7 @@ set backspace=indent,eol,start	" Backspace behaviour
 " Para fazer fuzzy find use o * em parte do nome
 set path+=**
 set wildmenu
+set laststatus=2
 
 " Para abrir um file explorer no VIM, sem nerdtree
 let g:netrw_banner=0
