@@ -63,6 +63,14 @@ set noerrorbells visualbell t_vb=
 " sometimes be convenient.
 set mouse+=a
 
+" To avoid ~ creation of backup files
+set nobackup
+set nowritebackup
+set noundofile
+
+" Enable system clipboard
+set clipboard=unnamedplus
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -88,6 +96,7 @@ Plug 'https://github.com/editorconfig/editorconfig-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 
 " vimwiki stuff
@@ -121,9 +130,5 @@ let g:netrw_altv=1
 let g:netrw_liststyle=3
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
-" To avoid ~ creation
-set nobackup
-set nowritebackup
 
 
